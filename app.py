@@ -55,13 +55,13 @@ def scrape_data(url, pages):
     return products
 
 # Streamlit UI
-st.title("PriceOye Product Data Scraper")
+st.title("PriceOye Product Data Scraper By Muhammad Abrar")
 
 # Select category from the dropdown
 category = st.selectbox("Select Product Category", list(categories.keys()))
 
 # Input number of pages to scrape
-pages = st.number_input("Enter number of pages to scrape:", min_value=1, max_value=100, value=5)
+pages = st.number_input("Enter number of pages to scrape:", min_value=1, max_value=100, value=1)
 
 # Scrape button
 if st.button("Scrape Data"):
